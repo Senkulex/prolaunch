@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Запуск Професії — легальний фріланс у Бельгії</title>
+<meta name="description" content="Легально почни працювати у своїй професії в Бельгії за 2–4 тижні — без відкриття фірми.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Запуск Професії — легальний фріланс у Бельгії">
+<meta property="og:description" content="Легально почни працювати у своїй професії в Бельгії за 2–4 тижні — без відкриття фірми (через SMart/Tentoo).">
+<meta property="og:url" content="https://prolaunch.netlify.app/">
+<meta property="og:image" content="https://prolaunch.netlify.app/preview.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#080D1A;--ink-soft:#28324A;--paper:#C8CDD8;--card:#D8DCE6;
+    --line:#B0B8C8;--emerald:#0B7A53;--emerald-soft:#B8D8C8;
+    --amber:#C98A1E;--strike:#6A7488;
+    --display:'Manrope',system-ui,sans-serif;
+    --body:'IBM Plex Sans',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--emerald);font-weight:500;}
+  h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em}
+  a{color:inherit}
+  .lang-sw{display:flex;gap:4px;align-items:center}
+  .lang-sw button{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;font-weight:600;background:none;border:1.5px solid var(--line);border-radius:6px;padding:4px 9px;cursor:pointer;color:var(--ink-soft);transition:all .15s;}
+  .lang-sw button:hover{border-color:var(--emerald);color:var(--emerald)}
+  .lang-sw button.active{background:var(--emerald);color:#fff;border-color:var(--emerald)}
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--display);font-weight:700;font-size:1.02rem;background:var(--emerald);color:#fff;padding:16px 28px;border-radius:10px;text-decoration:none;transition:transform .18s,box-shadow .18s,background .18s;box-shadow:0 6px 18px rgba(11,122,83,.22);}
+  .btn:hover{transform:translateY(-2px);background:#0a6a48;box-shadow:0 10px 26px rgba(11,122,83,.30)}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn .arr{transition:transform .18s}
+  .btn:hover .arr{transform:translateX(4px)}
+  
+  header.hero{padding:28px 0 36px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-180px;right:-160px;width:520px;height:520px;background:radial-gradient(circle,rgba(11,122,83,.10),transparent 65%);z-index:0;}
+  .hero .wrap{position:relative;z-index:1}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:6px 0 30px}
+  .brand{font-family:var(--display);font-weight:800;font-size:1.12rem;letter-spacing:-.02em}
+  .brand .dot{color:var(--emerald)}
+  
+  /* Pilot Badge */
+  .pilot-badge {display:inline-flex; align-items:center; background:rgba(201,138,30,.15); color:var(--amber); padding:6px 14px; border-radius:20px; font-family:var(--mono); font-size:0.75rem; letter-spacing:0.05em; font-weight:700; margin-bottom:16px; border:1px solid rgba(201,138,30,.3);}
+  
+  .hero h1{font-size:clamp(2.5rem,6.2vw,4.5rem);font-weight:800;max-width:14ch;margin-bottom:13px;}
+  .hero h1 .accent{color:var(--emerald)}
+  .status{display:inline-flex;flex-wrap:wrap;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:14px;}
+  .status .lbl{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .status .was{color:var(--strike);text-decoration:line-through;text-decoration-thickness:2px;font-size:.98rem}
+  .status .to{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.98rem}
+  .status .arrow{color:var(--emerald);font-weight:700}
+  .status .stamp{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);background:var(--emerald-soft);border-radius:6px;padding:3px 8px;font-weight:500;}
+  .hero .sub{font-size:1.18rem;color:var(--ink-soft);max-width:46ch;margin-bottom:17px}
+  .hero .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px; margin-bottom:18px;}
+  .hero .trust{font-size:.92rem;color:var(--ink-soft);max-width:30ch}
+  
+  /* A-card note */
+  .acard-note {font-size:0.9rem; color:var(--ink-soft); display:inline-block; background:var(--card); padding:8px 16px; border-radius:8px; border:1px solid var(--line); font-weight:500;}
+
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  .sec-head{max-width:52ch;margin-bottom:22px}
+  .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:700;margin:7px 0 0}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem;margin-top:8px}
+  
+  .pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .pain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px 14px;font-size:1.0rem;position:relative;padding-left:44px;}
+  .pain::before{content:"";position:absolute;left:14px;top:16px;width:14px;height:14px;border-radius:3px;border:2px solid var(--strike);}
+  
+  /* Comparison Table */
+  .table-wrap {overflow-x:auto; margin-top:24px;}
+  .comp-table {width:100%; border-collapse:collapse; background:var(--card); border-radius:14px; overflow:hidden; border:1px solid var(--line);}
+  .comp-table th, .comp-table td {padding:16px; text-align:left; border-bottom:1px solid var(--line);}
+  .comp-table th {background:var(--ink); color:#fff; font-family:var(--display); font-weight:600; font-size:1.05rem;}
+  .comp-table td {color:var(--ink);}
+  .comp-table tr td:first-child {font-weight:600; background:rgba(255,255,255,0.1);}
+  .comp-table .highlight {background:var(--emerald-soft); color:var(--emerald); font-weight:700; border-left:2px solid var(--emerald); border-right:2px solid var(--emerald);}
+  .comp-table th.highlight {background:var(--emerald); color:#fff; border:none;}
+  
+  .solution{background:var(--ink);color:#fff;border-radius:16px;padding:26px 28px}
+  .solution .eyebrow{color:#5FD0A2}
+  .solution h2{color:#fff;font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;margin:7px 0 9px;max-width:22ch}
+  .solution p{color:#C3CBDA;font-size:1.12rem;max-width:60ch}
+  .solution .pill{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:#5FD0A2;border:1px solid rgba(95,208,162,.35);border-radius:999px;padding:7px 14px}
+  
+  .steps{position:relative;display:grid;gap:0}
+  .step{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:11px 0;position:relative}
+  .step:not(:last-child)::after{content:"";position:absolute;left:25px;top:44px;bottom:-10px;width:2px;background:var(--line);}
+  .step .num{width:52px;height:52px;border-radius:50%;background:var(--card);border:2px solid var(--emerald);color:var(--emerald);font-family:var(--display);font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;}
+  .step h3{font-size:1.1rem;font-weight:700;margin-bottom:3px}
+  .step p{color:var(--ink-soft);font-size:1.05rem;max-width:54ch}
+  
+  .fit{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .fit-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .fit-card.yes{border-color:rgba(11,122,83,.35)}
+  .fit-card h3{font-size:1.35rem;font-weight:700;margin-bottom:6px}
+  .fit-card .tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+  .fit-card.yes .tag{color:var(--emerald)}
+  .fit-card.no .tag{color:var(--amber)}
+  .fit-card ul{list-style:none;margin-top:10px;display:grid;gap:7px}
+  .fit-card li{padding-left:26px;position:relative;color:var(--ink-soft)}
+  .fit-card.yes li::before{content:"✓";position:absolute;left:0;color:var(--emerald);font-weight:700}
+  .fit-card.no li::before{content:"–";position:absolute;left:0;color:var(--amber);font-weight:700}
+  
+  .price{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:center}
+  .price .amount{font-family:var(--display);font-weight:800;font-size:3.6rem;line-height:1;letter-spacing:-.03em}
+  
+  /* DISCOUNT BADGE */
+  .discount-badge {display:inline-block; margin-top:12px; padding:10px 16px; border:2px dashed var(--emerald); border-radius:8px; background:rgba(11,122,83,0.08); color:var(--emerald); font-family:var(--body); font-size:0.95rem; font-weight:700;}
+  
+  .price .pname{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);margin-bottom:14px;display:block}
+  .price ul{list-style:none;display:grid;gap:7px;margin-top:4px}
+  .price li{padding-left:26px;position:relative;color:var(--ink-soft)}
+  .price li::before{content:"✓";position:absolute;left:0;color:var(--emerald);font-weight:700}
+  .price .note{font-size:.92rem;color:var(--ink-soft);margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+  
+  .pilot-text {color:var(--amber); font-weight:600; margin-top:14px; display:inline-block; font-size:0.95rem;}
+
+  .final{text-align:center;background:linear-gradient(180deg,var(--paper),#EAEFF6)}
+  .final h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;margin-bottom:10px}
+  .final p{color:var(--ink-soft);font-size:1.05rem;max-width:44ch;margin:0 auto 18px}
+  
+  footer{padding:24px 0 32px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.86rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:16px 30px;justify-content:space-between;align-items:center}
+  .footer-left{display:grid;gap:6px;max-width:60ch}
+  footer .brand{font-size:1rem;color:var(--ink);margin:0}
+  .github-link{text-decoration:none; white-space:nowrap; display:inline-flex; align-items:center; gap:8px; color:var(--ink-soft); transition:color .15s;}
+  .github-link span{text-decoration:underline; text-underline-offset:3px;}
+  .github-link:hover{color:var(--emerald)}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  .qform{max-width:620px;margin:28px auto 0;text-align:left}
+  .qstep{display:none}
+  .qstep.active{display:block}
+  .qlbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--emerald);margin-bottom:10px}
+  .qh{font-family:var(--display);font-size:1.35rem;font-weight:700;margin-bottom:8px;line-height:1.2}
+  .qsub{color:var(--ink-soft);font-size:.97rem;margin-bottom:14px}
+  .qopts{display:grid;gap:9px;margin-top:14px}
+  .qopt{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:13px 16px;text-align:left;font-family:var(--body);font-size:1rem;color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s;font-weight:500;}
+  .qopt:hover{border-color:var(--emerald);background:var(--emerald-soft)}
+  .qtxt{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font-family:var(--body);font-size:1rem;color:var(--ink);resize:vertical;margin-top:10px;}
+  .qtxt:focus{outline:none;border-color:var(--emerald)}
+  .qfields{display:grid;gap:10px;margin-top:14px;margin-bottom:4px}
+  .qinp{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font-family:var(--body);font-size:1rem;color:var(--ink);}
+  .qinp:focus{outline:none;border-color:var(--emerald)}
+  .result{text-align:center;padding:10px 0}
+  .res-icon{width:56px;height:56px;border-radius:50%;background:var(--emerald-soft);color:var(--emerald);font-size:1.6rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+  .res-list{list-style:none;text-align:left;display:grid;gap:8px;margin-top:12px;background:var(--card);border-radius:12px;padding:16px 18px;border:1px solid var(--line)}
+  .res-list li{padding-left:18px;position:relative;color:var(--ink-soft)}
+  .res-list li::before{content:"→";position:absolute;left:0;color:var(--emerald);font-weight:700}
+  .res-list a{color:var(--emerald);text-decoration:underline;text-underline-offset:3px}
+  
+  .qback {background:rgba(255,255,255,0.4); border:1.5px solid var(--line); border-radius:8px; color:var(--ink-soft); font-family:var(--mono); font-size:0.8rem; letter-spacing:0.04em; cursor:pointer; margin-bottom:16px; display:inline-flex; align-items:center; justify-content:center; gap:6px; text-decoration:none; padding:8px 16px; transition:all .15s;}
+  .qback:hover {border-color:var(--emerald); color:var(--emerald); background:var(--emerald-soft);}
+
+  @media(max-width:760px){
+    .topbar{padding-bottom:22px}
+    .pain-grid,.fit,.price{grid-template-columns:1fr}
+    .solution{padding:20px 18px}
+    .price{padding:16px}
+    .price .amount{font-size:3rem}
+    section{padding:30px 0}
+    .step{grid-template-columns:44px 1fr;gap:10px}
+    .step .num{width:44px;height:44px;font-size:1.1rem}
+    .step:not(:last-child)::after{left:21px;top:38px}
+    .lang-sw button{padding:3px 7px;font-size:.7rem}
+    footer .wrap {justify-content:center; text-align:center;}
+    .footer-left {justify-items:center;}
+    .comp-table {font-size:0.85rem;}
+    .comp-table th, .comp-table td {padding:12px 8px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .btn,.btn .arr{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">Професія<span class="dot">.</span></div>
+      <div class="lang-sw">
+        <button onclick="setLang('uk')" id="btn-uk" class="active">UA</button>
+        <button onclick="setLang('en')" id="btn-en">EN</button>
+        <button onclick="setLang('ru')" id="btn-ru">RU</button>
+      </div>
+    </div>
+
+    <div class="pilot-badge" data-t="badge_pilot"></div>
+    <p class="eyebrow" data-t="eyebrow_hero"></p>
+    <h1><span data-t="h1_main"></span> <span class="accent" data-t="h1_accent"></span><span data-t="h1_end"></span></h1>
+
+    <div class="status">
+      <span class="lbl" data-t="status_lbl"></span>
+      <span class="was" data-t="status_was"></span>
+      <span class="arrow">→</span>
+      <span class="to"><span data-t="status_to"></span> <span class="stamp" data-t="status_stamp"></span></span>
+    </div>
+
+    <p class="sub" data-t="hero_sub"></p>
+    <div class="cta-row">
+      <a class="btn" href="#screening"><span data-t="btn_main"></span> <span class="arr">→</span></a>
+      <span class="trust" data-t="hero_trust"></span>
+    </div>
+    <div class="acard-note" data-t="note_acard"></div>
+  </div>
+</header>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-t="pain_eyebrow"></p>
+      <h2 data-t="pain_h2"></h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain" data-t="pain1"></div>
+      <div class="pain" data-t="pain2"></div>
+      <div class="pain" data-t="pain3"></div>
+      <div class="pain" data-t="pain4"></div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-t="comp_title"></h2>
+      <p data-t="comp_sub"></p>
+    </div>
+    <div class="table-wrap">
+      <table class="comp-table">
+        <tr>
+          <th data-t="comp_th1"></th>
+          <th data-t="comp_th2"></th>
+          <th data-t="comp_th3"></th>
+          <th class="highlight" data-t="comp_th4"></th>
+        </tr>
+        <tr>
+          <td data-t="comp_r1_1"></td>
+          <td data-t="comp_r1_2"></td>
+          <td data-t="comp_r1_3"></td>
+          <td class="highlight" data-t="comp_r1_4"></td>
+        </tr>
+        <tr>
+          <td data-t="comp_r2_1"></td>
+          <td data-t="comp_r2_2"></td>
+          <td data-t="comp_r2_3"></td>
+          <td class="highlight" data-t="comp_r2_4"></td>
+        </tr>
+        <tr>
+          <td data-t="comp_r3_1"></td>
+          <td data-t="comp_r3_2"></td>
+          <td data-t="comp_r3_3"></td>
+          <td class="highlight" data-t="comp_r3_4"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="solution">
+      <p class="eyebrow" data-t="sol_eyebrow"></p>
+      <h2 data-t="sol_h2"></h2>
+      <p data-t="sol_p"></p>
+      <span class="pill" data-t="sol_pill"></span>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-t="how_eyebrow"></p>
+      <h2 data-t="how_h2"></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h3 data-t="step1_h"></h3><p data-t="step1_p"></p></div></div>
+      <div class="step"><div class="num">2</div><div><h3 data-t="step2_h"></h3><p data-t="step2_p"></p></div></div>
+      <div class="step"><div class="num">3</div><div><h3 data-t="step3_h"></h3><p data-t="step3_p"></p></div></div>
+      <div class="step"><div class="num">4</div><div><h3 data-t="step4_h"></h3><p data-t="step4_p"></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-t="fit_eyebrow"></p>
+      <h2 data-t="fit_h2"></h2>
+    </div>
+    <div class="fit">
+      <div class="fit-card yes">
+        <span class="tag" data-t="fit_yes_tag"></span>
+        <h3 data-t="fit_yes_h"></h3>
+        <ul>
+          <li data-t="fit_yes1"></li><li data-t="fit_yes2"></li>
+          <li data-t="fit_yes3"></li><li data-t="fit_yes4"></li>
+        </ul>
+      </div>
+      <div class="fit-card no">
+        <span class="tag" data-t="fit_no_tag"></span>
+        <h3 data-t="fit_no_h"></h3>
+        <ul>
+          <li data-t="fit_no1"></li><li data-t="fit_no2"></li>
+          <li data-t="fit_no3"></li><li data-t="fit_no4"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-t="price_eyebrow"></p>
+      <h2 data-t="price_h2"></h2>
+    </div>
+    <div class="price">
+      <div>
+        <span class="pname" data-t="price_pname"></span>
+        <div class="amount">€600</div>
+        <div class="discount-badge" data-t="discount_badge"></div>
+        <p class="note" data-t="price_note"></p>
+        <span class="pilot-text" data-t="pilot_urgency"></span>
+      </div>
+      <ul>
+        <li data-t="pr1"></li><li data-t="pr2"></li>
+        <li data-t="pr3"></li><li data-t="pr4"></li><li data-t="pr5"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="final reveal" id="screening">
+  <div class="wrap">
+    <h2 data-t="final_h2"></h2>
+    <p data-t="final_p"></p>
+
+    <div class="qform" id="qform">
+      <div class="qstep active" data-step="1">
+        <p class="qlbl" data-t="q_step" data-n="1"></p>
+        <h3 class="qh" data-t="q1_h"></h3>
+        <div class="qopts" id="q1opts"></div>
+      </div>
+      <div class="qstep" data-step="2">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="2"></p>
+        <h3 class="qh" data-t="q2_h"></h3>
+        <p class="qsub" data-t="q2_sub"></p>
+        <div class="qopts" id="q2opts"></div>
+      </div>
+      <div class="qstep" data-step="3">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="3"></p>
+        <h3 class="qh" data-t="q3_h"></h3>
+        <div class="qopts" id="q3opts"></div>
+      </div>
+      <div class="qstep" data-step="4">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="4"></p>
+        <h3 class="qh" data-t="q4_h"></h3>
+        <p class="qsub" data-t="q4_sub"></p>
+        <textarea class="qtxt" id="q4txt" rows="3"></textarea>
+        <button class="btn qnext" data-next="5" data-key="service" data-src="q4txt" style="margin-top:12px" data-t="btn_next"></button>
+      </div>
+      <div class="qstep" data-step="5">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="5"></p>
+        <h3 class="qh" data-t="q5_h"></h3>
+        <div class="qopts" id="q5opts"></div>
+      </div>
+      <div class="qstep" data-step="6">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="6"></p>
+        <h3 class="qh" data-t="q6_h"></h3>
+        <p class="qsub" data-t="q6_sub"></p>
+        <div class="qopts" id="q6opts"></div>
+      </div>
+      <div class="qstep" data-step="7">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="q_step" data-n="7"></p>
+        <h3 class="qh" data-t="q7_h"></h3>
+        <div class="qopts" id="q7opts"></div>
+      </div>
+      <div class="qstep" data-step="contact">
+        <button class="qback" onclick="goBack()">← <span data-t="btn_back"></span></button>
+        <p class="qlbl" data-t="contact_lbl"></p>
+        <h3 class="qh" data-t="contact_h"></h3>
+        <p class="qsub" data-t="contact_sub"></p>
+        <div class="qfields">
+          <input class="qinp" id="cname" type="text" data-placeholder-t="ph_name">
+          <input class="qinp" id="ctg" type="text" data-placeholder-t="ph_contact">
+        </div>
+        <form id="qfinalform" action="https://formspree.io/f/xlgkozwo" method="POST">
+          <input type="hidden" name="prof" id="f_prof">
+          <input type="hidden" name="regulated" id="f_reg">
+          <input type="hidden" name="acard" id="f_acard">
+          <input type="hidden" name="service" id="f_service">
+          <input type="hidden" name="goal" id="f_goal">
+          <input type="hidden" name="budget" id="f_budget">
+          <input type="hidden" name="timing" id="f_timing">
+          <input type="hidden" name="name" id="f_name">
+          <input type="hidden" name="contact" id="f_contact">
+          <button type="submit" class="btn" style="margin-top:16px;width:100%;justify-content:center">
+            <span data-t="btn_submit"></span> <span class="arr">→</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="qstep result" data-step="green">
+        <div class="res-icon">✓</div>
+        <h3 class="qh" data-t="res_green_h"></h3>
+        <p class="qsub" data-t="res_green_p"></p>
+        <a class="btn" href="https://t.me/YOURHANDLE" target="_blank" style="margin-top:12px">
+          <span data-t="btn_tg"></span> →
+        </a>
+      </div>
+      <div class="qstep result" data-step="amber">
+        <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">→</div>
+        <h3 class="qh" data-t="res_amber_h"></h3>
+        <p class="qsub" data-t="res_amber_p"></p>
+        <a class="btn" href="https://t.me/YOURHANDLE" target="_blank" style="margin-top:12px">
+          <span data-t="btn_tg"></span> →
+        </a>
+      </div>
+      <div class="qstep result" data-step="red-regulated">
+        <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">!</div>
+        <h3 class="qh" data-t="red_reg_h"></h3>
+        <p class="qsub" data-t="red_reg_p"></p>
+        <ul class="res-list">
+          <li><a href="https://www.naric.be" target="_blank">naric.be</a></li>
+          <li data-t="red_reg_li2"></li>
+          <li><a href="https://helpukraine.brussels" target="_blank">helpukraine.brussels</a></li>
+        </ul>
+      </div>
+      <div class="qstep result" data-step="red-acard">
+        <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">!</div>
+        <h3 class="qh" data-t="red_acard_h"></h3>
+        <p class="qsub" data-t="red_acard_p"></p>
+        <ul class="res-list">
+          <li><a href="https://helpukraine.brussels" target="_blank">helpukraine.brussels</a></li>
+          <li><a href="https://dofi.ibz.be" target="_blank">dofi.ibz.be</a></li>
+        </ul>
+      </div>
+      <div class="qstep result" data-step="red-hire">
+        <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">→</div>
+        <h3 class="qh" data-t="red_hire_h"></h3>
+        <ul class="res-list">
+          <li><a href="https://www.actiris.brussels" target="_blank">Actiris</a> — Brussel</li>
+          <li><a href="https://www.vdab.be" target="_blank">VDAB</a> — Vlaanderen</li>
+          <li><a href="https://www.leforem.be" target="_blank">Le Forem</a> — Wallonie</li>
+        </ul>
+      </div>
+      <div class="qstep result" data-step="red-free">
+        <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">→</div>
+        <h3 class="qh" data-t="red_free_h"></h3>
+        <ul class="res-list">
+          <li><a href="https://www.actiris.brussels" target="_blank">Actiris</a></li>
+          <li><a href="https://www.vdab.be" target="_blank">VDAB</a></li>
+          <li><a href="https://helpukraine.brussels" target="_blank">helpukraine.brussels</a></li>
+        </ul>
+        <p class="qsub" style="margin-top:12px" data-t="red_free_p"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="brand">Професія<span style="color:var(--emerald)">.</span></div>
+      <div data-t="footer_note"></div>
+    </div>
+    <a href="https://github.com/Senkulex" target="_blank" rel="noopener noreferrer" class="github-link">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+      <span data-t="github_link"></span>
+    </a>
+  </div>
+</footer>
+
+<script>
+var T = {
+  uk:{
+    badge_pilot:"🚀 Пілотний запуск",
+    note_acard:"🛡️ Для власників A-card: тимчасовий захист продовжено до березня 2027 р.",
+    eyebrow_hero:"Для спеціалістів у Бельгії",
+    h1_main:"Поверни свою",h1_accent:"професію",h1_end:" у Бельгії.",
+    status_lbl:"Статус",status_was:"працюю не за фахом",
+    status_to:"працюю за своєю професією",status_stamp:"легально",
+    hero_sub:"Приїхав і працюєш не за спеціальністю? За 2–4 тижні допоможу знову заробляти у своїй професії — офіційно, з рахунком-фактурою, без відкриття фірми.",
+    btn_main:"Пройти безкоштовний розбір",
+    hero_trust:"10 хвилин. Без зобов'язань. Відповім твоєю мовою.",
+    pain_eyebrow:"Знайомо?",
+    pain_h2:"Був фахівцем вдома — тут підробітки не за спеціальністю.",
+    pain1:"Хочеш повернутися до спеціальності, але лякають ІП, ліцензії та податки.",
+    pain2:"Не розумієш, з чого почати чужою мовою та де знайти першого клієнта.",
+    pain3:"Боїшся працювати «в сірій зоні» та втратити статус або пільги.",
+    pain4:"Нові правила 2026. З січня обов'язкові електронні фактури (Peppol). Не знаєш, як це налаштувати.",
+    
+    comp_title:"Інформація безкоштовна. Результат — ні.",
+    comp_sub:"Чому самостійні спроби часто заводять у глухий кут:",
+    comp_th1:"Реальність", comp_th2:"Держ. служби (VDAB)", comp_th3:"Самостійний пошук", comp_th4:"Запуск професії",
+    comp_r1_1:"Мета", comp_r1_2:"Знайти будь-яку роботу, часто не за фахом", comp_r1_3:"Місяці читання форумів без гарантій", comp_r1_4:"Повернути тебе у власну спеціальність",
+    comp_r2_1:"Дія", comp_r2_2:"Заповнення анкет та очікування", comp_r2_3:"Ризик помилок через незнання законів", comp_r2_4:"Покроковий супровід до першої фактури",
+    comp_r3_1:"Легальність", comp_r3_2:"Робота за наймом на чужого дядю", comp_r3_3:"Високий ризик порушити закон", comp_r3_4:"Повністю легальный трек (SMart/Tentoo)",
+
+    sol_eyebrow:"Рішення",
+    sol_h2:"Є легальний спосіб почати — без відкриття фірми.",
+    sol_p:"Через бельгійську структуру SMart (або Tentoo) ти працюєш як спеціаліст і виставляєш офіційну фактуру, залишаючись оформленим легально — не відкриваючи ФОП. Спочатку отримуєш перший заказ у своїй професії, перевіряєш попит. А коли будеш готовий — переходиш у власну справу.",
+    sol_pill:"перший заказ → перша фактура → своя справа",
+    how_eyebrow:"Як це працює",how_h2:"Чотири кроки — від розбору до першої фактури.",
+    step1_h:"Розбір",step1_p:"Дивимося на твою професію і що можна продати першим. Регульовані професії відсікаємо одразу.",
+    step2_h:"Упаковка",step2_p:"Формулюємо конкретну пропозицію з ціною і збираємо просту сторінку-візитку.",
+    step3_h:"Запуск",step3_p:"Налаштовуємо білінг через SMart/Tentoo (з підтримкою Peppol) і йдемо до першого замовлення.",
+    step4_h:"Вихід",step4_p:"Даю чеклист переходу у власний ФОП, коли обсяг виросте.",
+    fit_eyebrow:"Чесно",fit_h2:"Кому підходить, а кому — ні.",
+    fit_yes_tag:"Підходить",fit_yes_h:"Нерегульовані професії",
+    fit_yes1:"IT, дизайн, переклади, маркетинг",fit_yes2:"Копірайтинг, фото, репетиторство",
+    fit_yes3:"Консалтинг (не фін./юр.)",fit_yes4:"Є діюча A-card",
+    fit_no_tag:"Не підходить",fit_no_h:"Тоді потрібен інший шлях",
+    fit_no1:"Ліцензовані: лікар, юрист, бухгалтер, архітектор",fit_no2:"Регульовані ремесла та фін-радники",
+    fit_no3:"Шукаєш роботу за наймом → Actiris / VDAB",fit_no4:"Немає A-card → спочатку статус",
+    price_eyebrow:"Ціна",price_h2:"Один пакет. Все включено.",
+    price_pname:"Пакет «Done-With-You»",
+    discount_badge:"🔥 Першим 10 клієнтам — знижка 50%",
+    price_note:"Прозоро: SMart бере ~6,5% з фактури, плюс утримуються податки та внески — я допомагаю виставити ціну так, щоб після утримань залишалося достатньо. Інвестиція, яка окупається з 2–3 замовлень.",
+    pilot_urgency:"💬 Перші 10 учасників пілоту отримують розширену підтримку.",
+    pr1:"Розбір і упаковка офера",pr2:"Сторінка-візитка",
+    pr3:"Налаштування SMart / Tentoo",pr4:"Супровід до першої фактури",pr5:"Чеклист виходу у власну справу",
+    final_h2:"Готовий повернутися до професії?",
+    final_p:"Відповідь на 7 питань — безкоштовно, займе 3 хвилини.",
+    q_step:"Крок {n} з 7",
+    q1_h:"Ким ти працював за професією?",
+    q1opts:[
+      {v:"IT / розробка",label:"IT / розробка"},{v:"Дизайн / графіка / веб",label:"Дизайн / графіка / веб"},
+      {v:"Переклади / тексти / копірайтинг",label:"Переклади / тексти / копірайтинг"},
+      {v:"Маркетинг / SMM",label:"Маркетинг / SMM"},{v:"Фото / відео",label:"Фото / відео"},
+      {v:"Репетиторство / викладання",label:"Репетиторство / викладання"},
+      {v:"Консалтинг",label:"Консалтинг"},{v:"Ремесло / рукоділля",label:"Ремесло / рукоділля"},
+      {v:"Інше",label:"Інше"}
+    ],
+    q2_h:"Чи вимагає твоя професія ліцензії, визнання диплому або членства в палаті?",
+    q2_sub:"Наприклад: лікар, юрист, бухгалтер, архітектор, електрик, фін-радник, присяжний перекладач.",
+    q2opts:[
+      {v:"no",label:"Ні, моя професія не зі списку",next:"3"},
+      {v:"yes",label:"Так, відноситься до одної з них",next:"red-regulated"},
+      {v:"unsure",label:"Не впевнений",next:"3"}
+    ],
+    q3_h:"Чи є у тебе діюча бельгійська A-card з правом на роботу?",
+    q3opts:[
+      {v:"yes",label:"Так, діюча",next:"4"},
+      {v:"no",label:"Ні / закінчилась / в процесі",next:"red-acard"}
+    ],
+    q4_h:"Що конкретно ти можеш зробити як послугу?",
+    q4_sub:"Наприклад: «зроблю логотип», «перекладу документ», «налаштую рекламу», «дам 4 уроки».",
+    q4_placeholder:"Опиши у 1–2 реченнях…",
+    q5_h:"Яка у тебе мета?",
+    q5opts:[
+      {v:"freelancer",label:"Повернутися до професії як фрілансер",next:"6"},
+      {v:"own-biz",label:"Запустити і потім відкрити власну справу",next:"6"},
+      {v:"hire",label:"Знайти роботу за наймом",next:"red-hire"},
+      {v:"oneoff",label:"Просто підзаробити разово",next:"6"}
+    ],
+    q6_h:"Готовий вкласти у запуск бюджет близько €600?",
+    q6_sub:"Це пакет «під ключ»: розбір, упаковка офера, налаштування, супровід до першої фактури.",
+    q6opts:[
+      {v:"yes",label:"Так, якщо бачу що спрацює",next:"7"},
+      {v:"maybe",label:"Треба подумати",next:"7"},
+      {v:"no",label:"Тільки якщо безкоштовно",next:"red-free"}
+    ],
+    q7_h:"Коли готовий почати?",
+    q7opts:[
+      {v:"soon",label:"Найближчі 2–4 тижні",next:"contact"},
+      {v:"later",label:"Просто вивчаю, без термінів",next:"contact"}
+    ],
+    contact_lbl:"Майже готово",contact_h:"Як з тобою зв'язатися?",
+    contact_sub:"Напишу протягом 24 годин твоєю мовою.",
+    ph_name:"Ім'я",ph_contact:"Telegram (@username) або email",
+    btn_next:"Далі →",btn_submit:"Надіслати заявку",btn_tg:"Написати в Telegram",
+    btn_back:"Назад",github_link:"GitHub Організація",
+    res_green_h:"Чудово — твій випадок підходить.",
+    res_green_p:"Я отримав твою заявку і зв'яжуся протягом 24 годин для короткого розбору.",
+    res_amber_h:"Схоже, тобі це підходить — але ти поки придивляєшся.",
+    res_amber_p:"Це нормально. Коли будеш готовий — напиши, розберемо разом.",
+    red_reg_h:"Твоя професія вимагає ліцензії — зонтик тут не допоможе.",
+    red_reg_p:"Зонтичні структури не обходять вимоги до ліцензій. Тобі потрібен інший шлях:",
+    red_reg_li2:"Профільна палата / орден (лікарі, юристи, архітектори)",
+    red_acard_h:"Без діючої A-card легально почати не можна.",
+    red_acard_p:"Спочатку потрібно підтвердити статус тимчасового захисту. Після цього повертайся.",
+    red_hire_h:"Якщо шукаєш роботу за наймом — тобі швидше допоможуть безкоштовно.",
+    red_free_h:"Безкоштовну допомогу з роботою надають державні служби.",
+    red_free_p:"Коли будеш готовий до платного супроводу — повертайся.",
+    footer_note:"Не є юридичною або податковою консультацією. Для спеціалістів з нерегульованими професіями у Бельгії."
+  },
+  en:{
+    badge_pilot:"🚀 Pilot Launch",
+    note_acard:"🛡️ For A-card holders: temporary protection extended to March 2027",
+    eyebrow_hero:"For specialists in Belgium",
+    h1_main:"Reclaim your",h1_accent:"profession",h1_end:" in Belgium.",
+    status_lbl:"Status",status_was:"working outside my field",
+    status_to:"working in my profession",status_stamp:"legally",
+    hero_sub:"Arrived and working outside your specialty? In 2–4 weeks I'll help you earn in your profession again — officially, with an invoice, without opening a company.",
+    btn_main:"Get a free consultation",
+    hero_trust:"10 minutes. No obligations. I'll reply in your language.",
+    pain_eyebrow:"Sound familiar?",
+    pain_h2:"You were a specialist back home — here you're doing odd jobs.",
+    pain1:"You want to return to your specialty, but registering a business feels overwhelming.",
+    pain2:"You don't know where to start in a foreign language or how to find clients.",
+    pain3:"You're afraid to work 'in the grey' and risk losing your status or benefits.",
+    pain4:"New 2026 rules. From January, e-invoicing (Peppol) is mandatory. You don't know how to set it up.",
+    
+    comp_title:"Information is free. Results are not.",
+    comp_sub:"Why DIY attempts often lead to a dead end:",
+    comp_th1:"Reality", comp_th2:"Gov. services (VDAB)", comp_th3:"DIY Research", comp_th4:"Profession Launch",
+    comp_r1_1:"Goal", comp_r1_2:"Find any job, often not your field", comp_r1_3:"Months of reading forums with no guarantee", comp_r1_4:"Return you to your actual specialty",
+    comp_r2_1:"Action", comp_r2_2:"Filling forms and waiting", comp_r2_3:"Risk of mistakes due to unknown laws", comp_r2_4:"Step-by-step guidance to the first invoice",
+    comp_r3_1:"Legality", comp_r3_2:"Working as an employee", comp_r3_3:"High risk of breaking the law", comp_r3_4:"Fully legal track (SMart/Tentoo)",
+
+    sol_eyebrow:"Solution",
+    sol_h2:"There's a legal way to start — without opening a company.",
+    sol_p:"Through the Belgian umbrella structure SMart (or Tentoo), you work as a specialist and issue official invoices — staying legally compliant. First you get your first order and test demand. When ready, you transition to your own business.",
+    sol_pill:"first order → first invoice → own business",
+    how_eyebrow:"How it works",how_h2:"Four steps — from consultation to first invoice.",
+    step1_h:"Consultation",step1_p:"We review your profession and what can be sold first. Regulated professions are filtered out immediately.",
+    step2_h:"Packaging",step2_p:"We formulate a concrete offer with pricing and build a simple landing page.",
+    step3_h:"Launch",step3_p:"We set up billing through SMart/Tentoo (Peppol ready) and work towards your first order.",
+    step4_h:"Exit",step4_p:"I provide a checklist for transitioning to your own business when volume grows.",
+    fit_eyebrow:"Honestly",fit_h2:"Who it's for — and who it's not.",
+    fit_yes_tag:"Fits",fit_yes_h:"Unregulated professions",
+    fit_yes1:"IT, design, translation, marketing",fit_yes2:"Copywriting, photography, tutoring",
+    fit_yes3:"Consulting (not financial/legal)",fit_yes4:"Valid A-card required",
+    fit_no_tag:"Doesn't fit",fit_no_h:"Then you need a different path",
+    fit_no1:"Licensed: doctor, lawyer, accountant, architect",fit_no2:"Regulated trades and financial advisors",
+    fit_no3:"Looking for employment → Actiris / VDAB",fit_no4:"No A-card → get status first",
+    price_eyebrow:"Pricing",price_h2:"One package. Everything included.",
+    price_pname:"'Done-With-You' Package",
+    discount_badge:"🔥 50% discount for the first 10 clients",
+    price_note:"Transparent: SMart takes ~6.5% per invoice, plus taxes are withheld — I help you set a price that leaves enough after deductions. An investment that pays off in 2–3 orders.",
+    pilot_urgency:"💬 The first 10 pilot participants get extended personal support.",
+    pr1:"Consultation and offer packaging",pr2:"Landing page / portfolio page",
+    pr3:"SMart / Tentoo setup",pr4:"Support until first invoice",pr5:"Exit checklist for own business",
+    final_h2:"Ready to return to your profession?",
+    final_p:"Answer 7 questions — free, takes 3 minutes.",
+    q_step:"Step {n} of 7",
+    q1_h:"What was your profession?",
+    q1opts:[
+      {v:"IT / development",label:"IT / development"},{v:"Design / graphics / web",label:"Design / graphics / web"},
+      {v:"Translation / writing / copywriting",label:"Translation / writing / copywriting"},
+      {v:"Marketing / SMM",label:"Marketing / SMM"},{v:"Photo / video",label:"Photo / video"},
+      {v:"Tutoring / teaching",label:"Tutoring / teaching"},
+      {v:"Consulting",label:"Consulting"},{v:"Crafts / handmade",label:"Crafts / handmade"},
+      {v:"Other",label:"Other"}
+    ],
+    q2_h:"Does your profession require a license, diploma recognition or chamber membership?",
+    q2_sub:"E.g.: doctor, lawyer, accountant, architect, electrician, financial advisor, sworn translator.",
+    q2opts:[
+      {v:"no",label:"No, my profession is not on that list",next:"3"},
+      {v:"yes",label:"Yes, it belongs to one of those",next:"red-regulated"},
+      {v:"unsure",label:"Not sure",next:"3"}
+    ],
+    q3_h:"Do you have a valid Belgian A-card with the right to work?",
+    q3opts:[
+      {v:"yes",label:"Yes, valid",next:"4"},
+      {v:"no",label:"No / expired / in progress",next:"red-acard"}
+    ],
+    q4_h:"What specifically can you offer as a service?",
+    q4_sub:"E.g.: 'I'll design a logo', 'translate a document', 'set up ads', 'give 4 lessons'.",
+    q4_placeholder:"Describe in 1–2 sentences…",
+    q5_h:"What is your goal?",
+    q5opts:[
+      {v:"freelancer",label:"Return to my profession as a freelancer",next:"6"},
+      {v:"own-biz",label:"Launch and then open my own business",next:"6"},
+      {v:"hire",label:"Find employment",next:"red-hire"},
+      {v:"oneoff",label:"Just earn some extra money once",next:"6"}
+    ],
+    q6_h:"Are you ready to invest ~€600 in the launch?",
+    q6_sub:"This is a done-with-you package: consultation, offer packaging, setup, support to first invoice.",
+    q6opts:[
+      {v:"yes",label:"Yes, if I see it works",next:"7"},
+      {v:"maybe",label:"Need to think about it",next:"7"},
+      {v:"no",label:"Only if it's free",next:"red-free"}
+    ],
+    q7_h:"When are you ready to start?",
+    q7opts:[
+      {v:"soon",label:"In the next 2–4 weeks",next:"contact"},
+      {v:"later",label:"Just exploring, no timeline",next:"contact"}
+    ],
+    contact_lbl:"Almost done",contact_h:"How can I reach you?",
+    contact_sub:"I'll reply within 24 hours in your language.",
+    ph_name:"Name",ph_contact:"Telegram (@username) or email",
+    btn_next:"Next →",btn_submit:"Submit application",btn_tg:"Write on Telegram",
+    btn_back:"Back",github_link:"GitHub Organization",
+    res_green_h:"Great — your case is a fit.",
+    res_green_p:"I received your application and will reach out within 24 hours. No obligations.",
+    res_amber_h:"Looks like this suits you — but you're still exploring.",
+    res_amber_p:"That's fine. When you're ready — write to me and we'll figure it out together.",
+    red_reg_h:"Your profession requires a license — umbrella structures won't help here.",
+    red_reg_p:"SMart/Tentoo don't bypass license requirements. You need a different path:",
+    red_reg_li2:"Professional chamber / order (doctors, lawyers, architects)",
+    red_acard_h:"Without a valid A-card, you can't start legally.",
+    red_acard_p:"First you need to confirm or extend your temporary protection status. Come back after.",
+    red_hire_h:"If you're looking for employment, free services will help you faster.",
+    red_free_h:"Free employment help is available from government services.",
+    red_free_p:"When you're ready for paid support — come back.",
+    footer_note:"Not legal or tax advice. For specialists with unregulated professions in Belgium."
+  },
+  ru:{
+    badge_pilot:"🚀 Пилотный запуск",
+    note_acard:"🛡️ Для владельцев A-card: временная защита продлена до марта 2027 г.",
+    eyebrow_hero:"Для специалистов в Бельгии",
+    h1_main:"Верни свою",h1_accent:"профессию",h1_end:" в Бельгии.",
+    status_lbl:"Статус",status_was:"работаю не по специальности",
+    status_to:"работаю в своей профессии",status_stamp:"легально",
+    hero_sub:"Приехал и работаешь не по специальности? За 2–4 недели помогу снова зарабатывать в своей профессии — официально, с фактурой, без открытия фирмы.",
+    btn_main:"Пройти бесплатный разбор",
+    hero_trust:"10 минут. Без обязательств. Отвечу на твоём языке.",
+    pain_eyebrow:"Знакомо?",
+    pain_h2:"Был специалистом дома — здесь подработки не по профессии.",
+    pain1:"Хочешь вернуться в специальность, но пугают ИП, лицензии и налоги.",
+    pain2:"Не понимаешь, с чего начать на чужом языке и где взять первого клиента.",
+    pain3:"Боишься работать «в серую» и потерять статус или льготы.",
+    pain4:"Новые правила 2026. С января обязательны электронные фактуры (Peppol). Не знаешь, как это настроить.",
+    
+    comp_title:"Информация бесплатна. Результат — нет.",
+    comp_sub:"Почему самостоятельные попытки часто заводят в тупик:",
+    comp_th1:"Реальность", comp_th2:"Гос. службы (VDAB)", comp_th3:"Самостоятельный поиск", comp_th4:"Запуск профессии",
+    comp_r1_1:"Цель", comp_r1_2:"Найти любую работу, часто не по специальности", comp_r1_3:"Месяцы чтения форумов без гарантий", comp_r1_4:"Вернуть вас в вашу реальную специальность",
+    comp_r2_1:"Действие", comp_r2_2:"Заполнение анкет и ожидание", comp_r2_3:"Риск ошибок из-за незнания законов", comp_r2_4:"Пошаговый довод до первой оплаченной фактуры",
+    comp_r3_1:"Легальность", comp_r3_2:"Работа по найму на чужого дядю", comp_r3_3:"Высокий риск нарушить закон", comp_r3_4:"Полностью легальный трек (SMart/Tentoo)",
+
+    sol_eyebrow:"Решение",
+    sol_h2:"Есть легальный способ начать — без открытия фирмы.",
+    sol_p:"Через бельгийскую структуру SMart (или Tentoo) ты работаешь как специалист и выставляешь официальную фактуру, оставаясь оформленным легально — не открывая ИП. Сначала получаешь первый заказ в своей профессии, проверяешь спрос. А когда будешь готов — переходишь в собственное дело.",
+    sol_pill:"первый заказ → первая фактура → своё дело",
+    how_eyebrow:"Как это работает",how_h2:"Четыре шага — от разбора до первой фактуры.",
+    step1_h:"Разбор",step1_p:"Смотрим твою профессию и что можно продать первым. Регулируемые профессии отсекаем сразу.",
+    step2_h:"Упаковка",step2_p:"Формулируем конкретный оффер с ценой и собираем простую страницу-визитку.",
+    step3_h:"Запуск",step3_p:"Настраиваем биллинг через SMart/Tentoo (с поддержкой Peppol) и идём к первому заказу.",
+    step4_h:"Выход",step4_p:"Даю чек-лист перехода в собственное ИП, когда объём вырастет.",
+    fit_eyebrow:"Честно",fit_h2:"Кому подходит, а кому — нет.",
+    fit_yes_tag:"Подходит",fit_yes_h:"Нерегулируемые профессии",
+    fit_yes1:"IT, дизайн, переводы, маркетинг",fit_yes2:"Копирайтинг, фото, репетиторство",
+    fit_yes3:"Консалтинг (не фин./юр.)",fit_yes4:"Есть действующая A-card",
+    fit_no_tag:"Не подходит",fit_no_h:"Тогда нужен другой путь",
+    fit_no1:"Лицензируемые: врач, юрист, бухгалтер, архитектор",fit_no2:"Регулируемые ремёсла и фин-советники",
+    fit_no3:"Ищешь работу по найму → Actiris / VDAB",fit_no4:"Нет A-card → сначала статус",
+    price_eyebrow:"Цена",price_h2:"Один пакет. Всё включено.",
+    price_pname:"Пакет «Done-With-You»",
+    discount_badge:"🔥 Первым 10 клиентам — скидка 50%",
+    price_note:"Прозрачно: SMart берёт ~6,5% с фактуры, плюс удерживаются налоги и взносы — я помогаю выставить цену так, чтобы после удержаний оставалось достаточно. Инвестиция окупается с 2–3 заказов.",
+    pilot_urgency:"💬 Первые 10 участников пилота получают расширенную поддержку.",
+    pr1:"Разбор и упаковка оффера",pr2:"Страница-визитка",
+    pr3:"Настройка SMart / Tentoo",pr4:"Сопровождение до первой фактуры",pr5:"Чек-лист выхода в своё дело",
+    final_h2:"Готов вернуться в профессию?",
+    final_p:"Ответь на 7 вопросов — бесплатно, займёт 3 минуты.",
+    q_step:"Шаг {n} из 7",
+    q1_h:"Кем ты работал по профессии?",
+    q1opts:[
+      {v:"IT / разработка",label:"IT / разработка"},{v:"Дизайн / графика / веб",label:"Дизайн / графика / веб"},
+      {v:"Переводы / тексты / копирайтинг",label:"Переводы / тексты / копирайтинг"},
+      {v:"Маркетинг / SMM",label:"Маркетинг / SMM"},{v:"Фото / видео",label:"Фото / видео"},
+      {v:"Репетиторство / преподавание",label:"Репетиторство / преподавание"},
+      {v:"Консалтинг",label:"Консалтинг"},{v:"Ремесло / рукоделие",label:"Ремесло / рукоделие"},
+      {v:"Другое",label:"Другое"}
+    ],
+    q2_h:"Требует ли твоя профессия лицензии, признания диплома или членства в палате?",
+    q2_sub:"Например: врач, юрист, бухгалтер, архитектор, электрик, фин-советник, присяжный переводчик.",
+    q2opts:[
+      {v:"no",label:"Нет, моя профессия не из этого списка",next:"3"},
+      {v:"yes",label:"Да, относится к одной из них",next:"red-regulated"},
+      {v:"unsure",label:"Не уверен",next:"3"}
+    ],
+    q3_h:"Есть ли у тебя действующая бельгийская A-card с правом на работу?",
+    q3opts:[
+      {v:"yes",label:"Да, действующая",next:"4"},
+      {v:"no",label:"Нет / истекла / в процессе",next:"red-acard"}
+    ],
+    q4_h:"Что конкретно ты можешь сделать как услугу?",
+    q4_sub:"Например: «сделаю логотип», «переведу документ», «настрою рекламу», «дам 4 урока».",
+    q4_placeholder:"Опиши в 1–2 предложениях…",
+    q5_h:"Какая у тебя цель?",
+    q5opts:[
+      {v:"freelancer",label:"Вернуться в профессию как фрилансер",next:"6"},
+      {v:"own-biz",label:"Запустить и потом открыть своё дело",next:"6"},
+      {v:"hire",label:"Найти работу по найму",next:"red-hire"},
+      {v:"oneoff",label:"Просто подзаработать разово",next:"6"}
+    ],
+    q6_h:"Готов вложить в запуск бюджет порядка €600?",
+    q6_sub:"Это пакет «под ключ»: разбор, упаковка оффера, настройка, сопровождение до первой фактуры.",
+    q6opts:[
+      {v:"yes",label:"Да, если вижу что сработает",next:"7"},
+      {v:"maybe",label:"Нужно подумать",next:"7"},
+      {v:"no",label:"Только если бесплатно",next:"red-free"}
+    ],
+    q7_h:"Когда готов начать?",
+    q7opts:[
+      {v:"soon",label:"В ближайшие 2–4 недели",next:"contact"},
+      {v:"later",label:"Просто изучаю, без сроков",next:"contact"}
+    ],
+    contact_lbl:"Почти готово",contact_h:"Как с тобой связаться?",
+    contact_sub:"Напишу в течение 24 часов на твоём языке.",
+    ph_name:"Имя",ph_contact:"Telegram (@username) или email",
+    btn_next:"Далее →",btn_submit:"Отправить заявку",btn_tg:"Написать в Telegram",
+    btn_back:"Назад",github_link:"GitHub Организация",
+    res_green_h:"Отлично — твой случай подходит.",
+    res_green_p:"Я получил твою заявку и свяжусь в течение 24 часов для короткого разбора.",
+    res_amber_h:"Похоже, тебе это подходит — но ты пока приглядываешься.",
+    res_amber_p:"Это нормально. Когда будешь готов — напиши, разберём вместе.",
+    red_reg_h:"Твоя профессия требует лицензии — зонтик здесь не поможет.",
+    red_reg_p:"Зонтичные структуры не обходят требования к лицензиям. Тебе нужен другой путь:",
+    red_reg_li2:"Профильная палата / орден (врачи, юристы, архитекторы)",
+    red_acard_h:"Без действующей A-card легально начать нельзя.",
+    red_acard_p:"Сначала нужно подтвердить или продлить статус временной защиты. После этого возвращайся.",
+    red_hire_h:"Если ищешь работу по найму — тебе быстрее помогут бесплатно.",
+    red_free_h:"Бесплатную помощь по работе дают государственные службы.",
+    red_free_p:"Когда будешь готов к платному сопровождению — возвращайся.",
+    footer_note:"Не является юридической или налоговой консультацией. Для специалистов с нерегулируемыми профессиями в Бельгии."
+  }
+};
+
+var currentLang = 'uk';
+var answers = {};
+var stepHistory = [];
+var currentStepId = '1';
+
+function t(key){ return (T[currentLang][key])||''; }
+
+function renderDynamic(){
+  document.querySelectorAll('[data-t]').forEach(function(el){
+    var key = el.getAttribute('data-t');
+    var n = el.getAttribute('data-n');
+    var val = t(key);
+    if(n) val = val.replace('{n}', n);
+    if(el.tagName==='INPUT'||el.tagName==='TEXTAREA') el.placeholder = val;
+    else el.textContent = val;
+  });
+  document.querySelectorAll('[data-placeholder-t]').forEach(function(el){
+    el.placeholder = t(el.getAttribute('data-placeholder-t'));
+  });
+  var q4 = document.getElementById('q4txt');
+  if(q4) q4.placeholder = t('q4_placeholder');
+
+  renderOpts('q1opts','q1opts',2,'prof');
+  renderOpts2('q2opts','q2opts');
+  renderOpts2('q3opts','q3opts');
+  renderOpts2('q5opts','q5opts');
+  renderOpts2('q6opts','q6opts');
+  renderOpts2('q7opts','q7opts');
+}
+
+function renderOpts(containerId, tKey, defaultNext, answerKey){
+  var c = document.getElementById(containerId);
+  if(!c) return;
+  c.innerHTML='';
+  (T[currentLang][tKey]||[]).forEach(function(item){
+    var btn = document.createElement('button');
+    btn.className='qopt';
+    btn.textContent=item.label;
+    btn.dataset.next = item.next || String(defaultNext);
+    btn.dataset.key = answerKey;
+    btn.dataset.val = item.v;
+    c.appendChild(btn);
+  });
+  bindOpts(c);
+}
+
+function renderOpts2(containerId, tKey){
+  var c = document.getElementById(containerId);
+  if(!c) return;
+  c.innerHTML='';
+  (T[currentLang][tKey]||[]).forEach(function(item){
+    var btn = document.createElement('button');
+    btn.className='qopt';
+    btn.textContent=item.label;
+    btn.dataset.next = item.next;
+    var keyMap={q1opts:'prof',q2opts:'regulated',q3opts:'acard',q5opts:'goal',q6opts:'budget',q7opts:'timing'};
+    btn.dataset.key = keyMap[containerId]||containerId;
+    btn.dataset.val = item.v;
+    c.appendChild(btn);
+  });
+  bindOpts(c);
+}
+
+function bindOpts(container){
+  container.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(this.dataset.key) answers[this.dataset.key]=this.dataset.val;
+      showStep(this.dataset.next);
+    });
+  });
+}
+
+function showStep(step, isBack){
+  if(!isBack && currentStepId !== step) {
+    stepHistory.push(currentStepId);
+  }
+  currentStepId = step;
+  
+  document.querySelectorAll('.qstep').forEach(function(el){el.classList.remove('active');});
+  var el = document.querySelector('[data-step="'+step+'"]');
+  if(el){
+    el.classList.add('active');
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+}
+
+function goBack(){
+  if(stepHistory.length > 0){
+    var prev = stepHistory.pop();
+    showStep(prev, true);
+  }
+}
+
+function setLang(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  ['uk','en','ru'].forEach(function(l){
+    document.getElementById('btn-'+l).classList.toggle('active', l===lang);
+  });
+  renderDynamic();
+}
+
+document.querySelectorAll('.qnext').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var src=this.dataset.src, key=this.dataset.key, next=this.dataset.next;
+    if(src){var el=document.getElementById(src);if(el)answers[key]=el.value;}
+    showStep(next);
+  });
+});
+
+var ff = document.getElementById('qfinalform');
+if(ff){
+  ff.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('f_prof').value=answers.prof||'';
+    document.getElementById('f_reg').value=answers.regulated||'';
+    document.getElementById('f_acard').value=answers.acard||'';
+    document.getElementById('f_service').value=answers.service||'';
+    document.getElementById('f_goal').value=answers.goal||'';
+    document.getElementById('f_budget').value=answers.budget||'';
+    document.getElementById('f_timing').value=answers.timing||'';
+    document.getElementById('f_name').value=document.getElementById('cname').value;
+    document.getElementById('f_contact').value=document.getElementById('ctg').value;
+    var g=answers.goal||'', ti=answers.timing||'';
+    var isGreen=(g==='freelancer'||g==='own-biz')&&ti==='soon';
+    
+    fetch(ff.action,{method:'POST',body:new FormData(ff),headers:{Accept:'application/json'}})
+      .then(function(){showStep(isGreen?'green':'amber');})
+      .catch(function(){showStep(isGreen?'green':'amber');});
+  });
+}
+
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+
+renderDynamic();
+</script>
+</body>
+</html>
