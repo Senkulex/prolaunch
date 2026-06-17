@@ -17,15 +17,16 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#080D1A;--ink-soft:#28324A;--paper:#C8CDD8;--card:#D8DCE6;
-    --line:#B0B8C8;--emerald:#0B7A53;--emerald-soft:#B8D8C8;
-    --amber:#C98A1E;--strike:#6A7488;
-    --display:'Manrope',system-ui,sans-serif;
-    --body:'IBM Plex Sans',system-ui,sans-serif;
-    --mono:'IBM Plex Mono',ui-monospace,monospace;
+    --ink:#1B2A4A;--ink-soft:#4A5568;--paper:#FAF7F2;--card:#FFFFFF;
+    --line:#E2D8CC;--emerald:#1B6B4A;--emerald-soft:#D4E8DC;
+    --amber:#D4A843;--coral:#E8847C;--yellow:#F2C94C;--navy:#1B2A4A;
+    --strike:#8896A6;
+    --display:'Playfair Display',Georgia,serif;
+    --body:'Inter',system-ui,sans-serif;
+    --mono:'DM Mono',ui-monospace,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -201,6 +202,71 @@
   }
   .gh-org:hover{color:var(--emerald)}
   .gh-logo{width:28px;height:28px;border-radius:50%;border:1px solid var(--line)}
+
+  .qinp.err,.qtxt.err{border-color:#e74c3c;animation:shake .3s}
+  .err-msg{color:#e74c3c;font-size:.82rem;margin-top:6px;display:none}
+  .err-msg.show{display:block}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+
+  /* ─── EDITORIAL ANIMATIONS ─── */
+  @keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+  @keyframes slideLeft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes colorBlock{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+  .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal:nth-child(2){transition-delay:.1s}
+  .reveal:nth-child(3){transition-delay:.2s}
+  .reveal:nth-child(4){transition-delay:.3s}
+
+  /* Editorial color accent bars */
+  section::before{content:none}
+  .pain::before{border-color:var(--coral)!important;border-radius:2px!important}
+
+  /* Warm card style */
+  .pain,.comp-table,.status,.quiz-card,.acard-note{border-color:var(--line)!important;background:var(--card)!important;box-shadow:0 2px 12px rgba(27,42,74,.04)!important}
+
+  /* Serif headings editorial feel */
+  h1,h2{font-style:normal;letter-spacing:-.03em!important}
+  .hero h1{line-height:1.05!important}
+  .hero h1 .accent{color:var(--emerald);font-style:italic}
+  
+  /* Yellow highlight accent */
+  .btn{background:var(--navy)!important;border-radius:0!important;box-shadow:none!important;font-family:var(--body)!important;font-weight:600!important;letter-spacing:.02em!important;text-transform:uppercase!important;font-size:.88rem!important;padding:16px 32px!important}
+  .btn:hover{background:var(--emerald)!important;transform:none!important;box-shadow:0 4px 16px rgba(27,106,74,.2)!important}
+
+  /* Editorial section dividers */
+  section{border-top:2px solid var(--navy)!important;padding:56px 0!important}
+
+  /* Footer warmth */
+  footer{background:var(--navy)!important}
+
+  /* Quiz card editorial */
+  .quiz-card{border-radius:2px!important;border:2px solid var(--navy)!important;box-shadow:none!important}
+  .qopt{border-radius:2px!important;border:1.5px solid var(--line)!important;background:var(--paper)!important}
+  .qopt:hover{border-color:var(--navy)!important;background:var(--card)!important}
+  .qinp,.qtxt{border-radius:2px!important;border:1.5px solid var(--line)!important}
+  .qinp:focus,.qtxt:focus{border-color:var(--navy)!important}
+
+  /* Warm page grain texture */
+  body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.75' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E")}
+
+  /* Color block accents on sections */
+  .sec-head .eyebrow{position:relative;padding-left:20px}
+  .sec-head .eyebrow::before{content:'';position:absolute;left:0;top:2px;bottom:2px;width:4px;background:var(--coral)}
+
+  /* Lang switcher editorial */
+  .lang-sw button{border-radius:0!important;border-width:2px!important}
+  .lang-sw button.active{background:var(--navy)!important;border-color:var(--navy)!important}
+
+  /* Result cards */
+  .res-icon{border-radius:2px!important}
+
+  /* Smooth page transitions */
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+
 </style>
 </head>
 <body>
@@ -392,7 +458,8 @@
         <p class="qlbl" data-t="q_step" data-n="4"></p>
         <h3 class="qh" data-t="q4_h"></h3>
         <p class="qsub" data-t="q4_sub"></p>
-        <textarea class="qtxt" id="q4txt" rows="3"></textarea>
+        <textarea class="qtxt" id="q4txt" rows="3" required></textarea>
+        <div class="err-msg" id="q4err"></div>
         <button class="btn qnext" data-next="5" data-key="service" data-src="q4txt" style="margin-top:12px" data-t="btn_next"></button>
       </div>
       <div class="qstep" data-step="5">
@@ -420,10 +487,12 @@
         <h3 class="qh" data-t="contact_h"></h3>
         <p class="qsub" data-t="contact_sub"></p>
         <div class="qfields">
-          <input class="qinp" id="cname" type="text" data-placeholder-t="ph_name">
-          <input class="qinp" id="ctg" type="text" data-placeholder-t="ph_contact">
+          <input class="qinp" id="cname" type="text" data-placeholder-t="ph_name" required>
+          <input class="qinp" id="ctg" type="email" data-placeholder-t="ph_contact" required>
         </div>
-        <form id="qfinalform" action="https://formspree.io/f/xlgkozwo" method="POST">
+        <div class="err-msg" id="contactErr"></div>
+        <form id="qfinalform">
+          <input type="hidden" name="language" id="f_lang">
           <input type="hidden" name="prof" id="f_prof">
           <input type="hidden" name="regulated" id="f_reg">
           <input type="hidden" name="acard" id="f_acard">
@@ -443,17 +512,13 @@
         <div class="res-icon">✓</div>
         <h3 class="qh" data-t="res_green_h"></h3>
         <p class="qsub" data-t="res_green_p"></p>
-        <a class="btn" href="https://t.me/YOURHANDLE" target="_blank" style="margin-top:12px">
-          <span data-t="btn_tg"></span> →
-        </a>
+
       </div>
       <div class="qstep result" data-step="amber">
         <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">→</div>
         <h3 class="qh" data-t="res_amber_h"></h3>
         <p class="qsub" data-t="res_amber_p"></p>
-        <a class="btn" href="https://t.me/YOURHANDLE" target="_blank" style="margin-top:12px">
-          <span data-t="btn_tg"></span> →
-        </a>
+
       </div>
       <div class="qstep result" data-step="red-regulated">
         <div class="res-icon" style="background:rgba(201,138,30,.12);color:var(--amber)">!</div>
@@ -516,6 +581,9 @@
 </footer>
 
 <script>
+// ═══ GOOGLE APPS SCRIPT — ProLaunch ═══
+var PROLAUNCH_SCRIPT='https://script.google.com/macros/s/AKfycbzhD_D3eUV4hVUedFfiLw4WTXsBjy4hhYURpTU5UH4l2LxoaSVIHqfEmm3cpM1N8t7s/exec';
+
 var T = {
   uk:{
     badge_pilot:"🚀 Пілотний запуск",
@@ -612,7 +680,7 @@ var T = {
     ],
     contact_lbl:"Майже готово",contact_h:"Як з тобою зв'язатися?",
     contact_sub:"Напишу протягом 24 годин твоєю мовою.",
-    ph_name:"Ім'я",ph_contact:"Telegram (@username) або email",
+    ph_name:"Ім'я",ph_contact:"Твій email",
     btn_next:"Далі →",btn_submit:"Надіслати заявку",btn_tg:"Написати в Telegram",
     btn_back:"Назад",github_link:"GitHub Організація",
     res_green_h:"Чудово — твій випадок підходить.",
@@ -724,7 +792,7 @@ var T = {
     ],
     contact_lbl:"Almost done",contact_h:"How can I reach you?",
     contact_sub:"I'll reply within 24 hours in your language.",
-    ph_name:"Name",ph_contact:"Telegram (@username) or email",
+    ph_name:"Name",ph_contact:"Your email",
     btn_next:"Next →",btn_submit:"Submit application",btn_tg:"Write on Telegram",
     btn_back:"Back",github_link:"GitHub Organization",
     res_green_h:"Great — your case is a fit.",
@@ -836,7 +904,7 @@ var T = {
     ],
     contact_lbl:"Почти готово",contact_h:"Как с тобой связаться?",
     contact_sub:"Напишу в течение 24 часов на твоём языке.",
-    ph_name:"Имя",ph_contact:"Telegram (@username) или email",
+    ph_name:"Имя",ph_contact:"Твой email",
     btn_next:"Далее →",btn_submit:"Отправить заявку",btn_tg:"Написать в Telegram",
     btn_back:"Назад",github_link:"GitHub Организация",
     res_green_h:"Отлично — твой случай подходит.",
@@ -957,10 +1025,28 @@ function setLang(lang){
   renderDynamic();
 }
 
+function sanitize(s){return s.replace(/[<>'";&]/g,'').trim();}
+
 document.querySelectorAll('.qnext').forEach(function(btn){
   btn.addEventListener('click',function(){
     var src=this.dataset.src, key=this.dataset.key, next=this.dataset.next;
-    if(src){var el=document.getElementById(src);if(el)answers[key]=el.value;}
+    if(src){
+      var el=document.getElementById(src);
+      if(el){
+        var val=sanitize(el.value);
+        if(!val){
+          el.classList.add('err');
+          var errDiv=document.getElementById('q4err');
+          if(errDiv){errDiv.textContent=currentLang==='uk'?'Будь ласка, заповніть поле':currentLang==='en'?'Please fill in this field':'Будь ласка, заповніть поле';errDiv.classList.add('show');}
+          setTimeout(function(){el.classList.remove('err');},600);
+          return;
+        }
+        el.classList.remove('err');
+        var errDiv=document.getElementById('q4err');
+        if(errDiv)errDiv.classList.remove('show');
+        answers[key]=val;
+      }
+    }
     showStep(next);
   });
 });
@@ -969,21 +1055,48 @@ var ff = document.getElementById('qfinalform');
 if(ff){
   ff.addEventListener('submit',function(e){
     e.preventDefault();
-    document.getElementById('f_prof').value=answers.prof||'';
-    document.getElementById('f_reg').value=answers.regulated||'';
-    document.getElementById('f_acard').value=answers.acard||'';
-    document.getElementById('f_service').value=answers.service||'';
-    document.getElementById('f_goal').value=answers.goal||'';
-    document.getElementById('f_budget').value=answers.budget||'';
-    document.getElementById('f_timing').value=answers.timing||'';
-    document.getElementById('f_name').value=document.getElementById('cname').value;
-    document.getElementById('f_contact').value=document.getElementById('ctg').value;
+    var nameEl=document.getElementById('cname');
+    var contactEl=document.getElementById('ctg');
+    var errDiv=document.getElementById('contactErr');
+    var nameVal=sanitize(nameEl.value);
+    var contactVal=sanitize(contactEl.value);
+    var hasErr=false;
+
+    nameEl.classList.remove('err');
+    contactEl.classList.remove('err');
+    if(errDiv)errDiv.classList.remove('show');
+
+    var emailBad=false;
+    var emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!nameVal){nameEl.classList.add('err');hasErr=true;}
+    if(!contactVal){contactEl.classList.add('err');hasErr=true;}
+    else if(!emailRe.test(contactVal)){contactEl.classList.add('err');hasErr=true;emailBad=true;}
+
+    if(hasErr){
+      if(errDiv){
+        errDiv.textContent=emailBad?(currentLang==='uk'?'Введіть коректний email':currentLang==='en'?'Enter a valid email':'Введите корректный email'):(currentLang==='uk'?'Заповніть обидва поля':currentLang==='en'?'Please fill in both fields':'Заполните оба поля');
+        errDiv.classList.add('show');
+      }
+      setTimeout(function(){nameEl.classList.remove('err');contactEl.classList.remove('err');},600);
+      return;
+    }
+
+    document.getElementById('f_prof').value=sanitize(answers.prof||'');
+    document.getElementById('f_reg').value=sanitize(answers.regulated||'');
+    document.getElementById('f_acard').value=sanitize(answers.acard||'');
+    document.getElementById('f_service').value=sanitize(answers.service||'');
+    document.getElementById('f_goal').value=sanitize(answers.goal||'');
+    document.getElementById('f_budget').value=sanitize(answers.budget||'');
+    document.getElementById('f_timing').value=sanitize(answers.timing||'');
+    document.getElementById('f_name').value=nameVal;
+    document.getElementById('f_contact').value=contactVal;
+    document.getElementById('f_lang').value=currentLang;
     var g=answers.goal||'', ti=answers.timing||'';
     var isGreen=(g==='freelancer'||g==='own-biz')&&ti==='soon';
-    
-    fetch(ff.action,{method:'POST',body:new FormData(ff),headers:{Accept:'application/json'}})
-      .then(function(){showStep(isGreen?'green':'amber');})
-      .catch(function(){showStep(isGreen?'green':'amber');});
+
+    var payload={prof:sanitize(answers.prof||''),regulated:sanitize(answers.regulated||''),acard:sanitize(answers.acard||''),service:sanitize(answers.service||''),goal:g,budget:sanitize(answers.budget||''),timing:ti,name:nameVal,contact:contactVal,language:currentLang};
+    fetch(PROLAUNCH_SCRIPT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});
+    showStep(isGreen?'green':'amber');
   });
 }
 
